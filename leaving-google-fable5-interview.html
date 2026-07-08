@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>‏11 שנים בגוגל: ראיון פרידה</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@500;700;900&family=Heebo:wght@300;400;500;700&display=swap"
+    rel="stylesheet">
+  <style>
+    :root {
+      --ink: #1c2733;
+      --muted: #5c6b7a;
+      --accent: #2563a8;
+      --paper: #fbfaf7;
+      --line: #e3e0d8;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: var(--paper);
+      color: var(--ink);
+      font-family: 'Heebo', sans-serif;
+      font-weight: 300;
+      font-size: 1.1rem;
+      line-height: 1.85;
+    }
+
+    .wrap {
+      max-width: 46rem;
+      margin: 0 auto;
+      padding: 3rem 1.5rem 5rem;
+    }
+
+    .topbar {
+      display: flex;
+      justify-content: flex-end;
+      margin-bottom: 2rem;
+    }
+
+    .lang-toggle {
+      font-family: 'Heebo', sans-serif;
+      font-size: 0.85rem;
+      font-weight: 500;
+      color: var(--accent);
+      background: none;
+      border: 1px solid var(--accent);
+      border-radius: 2rem;
+      padding: 0.35rem 1.1rem;
+      cursor: pointer;
+      transition: background 0.15s, color 0.15s;
+    }
+
+    .lang-toggle:hover,
+    .lang-toggle:focus-visible {
+      background: var(--accent);
+      color: var(--paper);
+      outline: none;
+    }
+
+    .eyebrow {
+      color: var(--accent);
+      font-weight: 500;
+      font-size: 0.9rem;
+      letter-spacing: 0.05em;
+      margin-bottom: 0.75rem;
+    }
+
+    h1 {
+      font-family: 'Frank Ruhl Libre', serif;
+      font-weight: 900;
+      font-size: clamp(2rem, 6vw, 3rem);
+      line-height: 1.2;
+      margin-bottom: 1.5rem;
+    }
+
+    .intro {
+      color: var(--muted);
+      font-size: 1.05rem;
+      border-inline-start: 3px solid var(--accent);
+      padding-inline-start: 1rem;
+      margin-bottom: 3.5rem;
+    }
+
+    .qa {
+      margin-bottom: 3rem;
+      position: relative;
+      padding-inline-start: 1.75rem;
+    }
+
+    .qa::before {
+      content: "";
+      position: absolute;
+      inset-inline-start: 0;
+      top: 0.65rem;
+      width: 0.7rem;
+      height: 0.7rem;
+      border-radius: 50%;
+      background: var(--paper);
+      border: 3px solid var(--accent);
+    }
+
+    .qa::after {
+      content: "";
+      position: absolute;
+      inset-inline-start: 0.29rem;
+      top: 1.6rem;
+      bottom: -2.4rem;
+      width: 2px;
+      background: var(--line);
+    }
+
+    .qa:last-of-type::after {
+      display: none;
+    }
+
+    .qa h2 {
+      font-family: 'Frank Ruhl Libre', serif;
+      font-weight: 700;
+      font-size: 1.3rem;
+      line-height: 1.45;
+      margin-bottom: 0.9rem;
+    }
+
+    .qa p {
+      margin-bottom: 1rem;
+    }
+
+    .qa p:last-child {
+      margin-bottom: 0;
+    }
+
+    .footer {
+      margin-top: 3.5rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 0.95rem;
+      font-style: italic;
+    }
+
+    strong {
+      font-weight: 500;
+    }
+
+    [hidden] {
+      display: none !important;
+    }
+  </style>
+</head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-QW1LPEEZMQ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() { dataLayer.push(arguments); }
+  gtag('js', new Date());
+
+  gtag('config', 'G-QW1LPEEZMQ');
+</script>
+
+<body>
+  <div class="wrap">
+
+    <div class="topbar">
+      <button class="lang-toggle" id="langToggle" onclick="toggleLang()">English</button>
+    </div>
+
+    <!-- ===================== HEBREW ===================== -->
+    <div id="content-he">
+      <div class="eyebrow">ראיון פרידה</div>
+      <h1>‏11 שנים בגוגל</h1>
+
+      <p class="intro">אחרי יותר מעשור בווייז ובגוגל, אמיר ממשיך הלאה. במקום פוסט פרידה רגיל, הוא התיישב לראיון קצר —
+        שנערך, איך לא ב-2026, על ידי AI — על הדרך, על התובנות, ועל מה הלאה.</p>
+
+      <div class="qa">
+        <h2>קח אותי ליום הראשון שלך, לפני 11 שנה. מי היה האיש שנכנס אז בדלת?</h2>
+        <p>אבא צעיר, אחרי חמש שנים בסטארטאפים, שהתלהב מהאפשרות לעבוד בחברה גדולה ויציבה יותר — ועל מוצר כמו ווייז, שכולם
+          מכירים ואוהבים. שמעתי שווייז עוברים למשרדי גוגל בתל אביב, ופשוט החלטתי ללכת על ההזדמנות. באותו רגע לא דמיינתי
+          שאשאר 11 שנה.</p>
+      </div>
+
+      <div class="qa">
+        <h2>הצטרפת לווייז בדיוק כשהיא הפכה לחלק מגוגל. זה הרגיש כמו ווייז, או כמו גוגל?</h2>
+        <p>גם וגם — תלוי מתי שואלים. הרכישה הייתה ב-2013, ואני הצטרפתי ב-2015, כשהצוות עבר למשרדי גוגל. השנים הראשונות
+          הרגישו לגמרי כמו סטארטאפ: ארגון שטוח, קצב מהיר, כולם מכירים את כולם ועובדים על הכל, והפאונדרים מעורבים מאוד
+          ביום יום. שונה מאוד מווייז של היום, שהיא הרבה יותר אינטגרלית בתוך גוגל. כך שלאורך העשור האחרון עברתי, מבפנים,
+          את המעבר ההדרגתי מתרבות סטארטאפית לתרבות תאגידית.</p>
+      </div>
+
+      <div class="qa">
+        <h2>מכל 11 השנים — מה הדבר שאתה הכי גאה בו?</h2>
+        <p>היו הרבה רגעים כאלה. אני שם מספיק זמן כדי לזכור איך ווייז נראתה לפני שהיו בה נתיבים, לפני שהיו רמזורים. אבל
+          הדוגמה המשמעותית ביותר בעיניי היא ההתראות על אזורי בתי ספר — פיצ'ר שיכול ממש לשמור על חיים של ילדים. מכל מה
+          שעבדתי עליו, זה מה שאספר עליו לנכדים.</p>
+      </div>
+
+      <div class="qa">
+        <h2>אחרי 11 שנה, עזיבה היא לא החלטה פשוטה. מה גרם לך להבין שהגיע הזמן?</h2>
+        <p>זה תהליך, לא החלטה שמתקבלת ברגע אחד. אצלי זה היה שילוב: סיבות אישיות ומשפחתיות — הילדים כבר גדולים יותר,
+          ותחושת יציבות וביטחון כלכלי שבניתי לאורך השנים. גם האירועים האחרונים בישראל, ובעיקר המלחמות עם איראן, היו זרז
+          לקבלת ההחלטה. ואחרי 11 שנה יש גם תחושה כללית של מיצוי, של מוכנות, ורצון אמיתי לעשות דברים אחרים ולהתפתח אל
+          הדבר הבא.</p>
+      </div>
+
+      <div class="qa">
+        <h2>אז מה הלאה?</h2>
+        <p>התוכנית כרגע היא להתרכז במנוחה ובזמן עם המשפחה: טיול בחו"ל באוגוסט, לחזור לכושר, וללמוד דברים חדשים — משהו
+          שאני מאוד אוהב. והיום ללמוד כיף מתמיד: עם AI אני לומד בכמה שעות מה שפעם היה לוקח כמה ימים. בשביל מי שאוהב
+          ללמוד, זו מתנה. אחרי תקופה כזאת של מנוחה, למידה והתחדשות — אני מתכנן לצאת לעולם היזמות.</p>
+      </div>
+
+      <div class="qa">
+        <h2>שאלה אחרונה: איזו עצה היית נותן למי שמתחיל היום קריירה בהייטק — או לעצמך, לפני 11 שנה?</h2>
+        <p>אני חושב על זה הרבה, כי יש לי שני ילדים, ואני מוצא את עצמי תוהה מה כדאי שהם ילמדו כדי להיות מוכנים לעתיד.
+          ולמרות שמדובר בשתי תקופות שונות לגמרי — וכולם מדברים על זה ש-AI יחליף את כולנו — התשובה שלי נשארת אותה תשובה.
+        </p>
+        <p><strong>בהקשר הלימודים:</strong> ללמוד תחום רחב ותשתיתי ככל האפשר. אני למדתי מתמטיקה בתואר הראשון, ומתמטיקה
+          רלוונטית לכל מקצועות המדע — היום יותר מתמיד. כנ"ל פיזיקה, ביולוגיה, פסיכולוגיה. הטכנולוגיה תמשיך להשתנות
+          והאפליקציות ישתנו איתה, אבל חוקי הטבע יישארו חוקי הטבע. מי שלומד לעומק את היסודות, חוקר, ולומד לחשוב בצורה
+          הנדסית — היתרון הזה נשאר איתו לתמיד.</p>
+        <p><strong>בהקשר העשייה:</strong> התשובה שלי דומה למסלול שאני עשיתי, ולא במקרה בחרתי בו. להיות במקום שצומח.
+          להתחיל בחברות קטנות ובסטארטאפים, שבהם עושים הכל מהכל, בקצב מהיר, ולומדים מהרבה אנשים. רק אחר כך, בשלב מאוחר
+          יותר, לעבור לארגון גדול וללמוד ממנו דברים אחרים. ואם אפשר למצוא ארגון שנמצא בעצמו בתהליך הזה — כמו ווייז — זו
+          אולי האופציה הטובה ביותר.</p>
+      </div>
+
+      <p class="footer">אמיר בילה 11 שנים בווייז ובגוגל בתפקידי פיתוח וניהול. בימים אלה הוא נח, לומד, ומתכנן את ההרפתקה
+        הבאה.</p>
+    </div>
+
+    <!-- ===================== ENGLISH ===================== -->
+    <div id="content-en" hidden>
+      <div class="eyebrow">An Exit Interview</div>
+      <h1>11 Years at Google</h1>
+
+      <p class="intro">After more than a decade at Waze and Google, Amir is moving on. Instead of a standard farewell
+        post, he sat down for a short interview — conducted, fittingly for 2026, by an AI — about the journey, the
+        lessons, and what comes next.</p>
+
+      <div class="qa">
+        <h2>Take me back to your first day, 11 years ago. Who was the person walking through that door?</h2>
+        <p>A young dad, fresh off five years in startups, looking for something a bit bigger and more stable — and
+          genuinely excited to work on a product like Waze that everyone knows and loves. I'd heard Waze was moving into
+          Google's Tel Aviv offices, and I just decided to go for it. I definitely didn't imagine I'd stay 11 years.</p>
+      </div>
+
+      <div class="qa">
+        <h2>You joined Waze right as it was becoming part of Google. Did it feel like Waze, or like Google?</h2>
+        <p>Honestly — both, depending on when you asked. Google acquired Waze in 2013, and I joined in 2015 as the team
+          moved into Google's offices. Those first years felt completely like a startup: a flat organization, fast pace,
+          everyone knew everyone and worked on everything, and the founders were deeply involved in the day-to-day.
+          That's very different from where Waze is today, much more integrated into Google. So over the past decade I
+          got to experience the full gradual transition from startup culture to corporate culture — from the inside.</p>
+      </div>
+
+      <div class="qa">
+        <h2>What's the one thing you're most proud of from those 11 years?</h2>
+        <p>There were many. I've been there long enough to remember Waze before it had lanes, before it showed traffic
+          lights. But the example that means the most to me is when we added alerts for school zones. That's a feature
+          that can genuinely protect children's lives. Of everything I worked on, that's the one I'd tell my grandkids
+          about.</p>
+      </div>
+
+      <div class="qa">
+        <h2>After 11 years, leaving can't have been easy. What made you realize it was time?</h2>
+        <p>It was a process, not a single moment. A combination of things: personal and family reasons — my kids are
+          older now, and I've built a sense of financial stability over the years. The recent events in Israel,
+          especially the wars with Iran, were also a catalyst for me. And after 11 years, there's a general feeling of
+          having come full circle — a readiness, and a real desire to do new things and grow into whatever comes next.
+        </p>
+      </div>
+
+      <div class="qa">
+        <h2>So what is next?</h2>
+        <p>For now: rest, and time with my family. A trip abroad in August, getting back in shape, and learning new
+          things — which I love. And learning right now is more fun than it's ever been: with AI, I can learn in a few
+          hours what used to take me days. For someone who loves learning, that's a gift. After this period of rest and
+          recharging, my plan is to go into entrepreneurship and build something of my own.</p>
+      </div>
+
+      <div class="qa">
+        <h2>Last one: what advice would you give someone starting out in tech today — or yourself, 11 years ago?</h2>
+        <p>I actually think about this a lot, because I have two kids and I find myself wondering what they should learn
+          to be ready for the future. And even though my start and today feel like two different eras — with all the
+          talk of AI replacing everyone — my answer stays the same.</p>
+        <p><strong>On education:</strong> study something broad and foundational. I did my undergrad in mathematics, and
+          math is relevant to every scientific field — today more than ever. The same goes for physics, biology,
+          psychology. Technologies will keep changing and the applications will change with them, but the laws of nature
+          will remain the laws of nature. If you learn the fundamentals deeply and learn to think in an engineering,
+          analytical way, that advantage travels with you.</p>
+        <p><strong>On career:</strong> my answer looks a lot like the path I chose, and that's no accident. Be somewhere
+          that's growing. Start at smaller companies and startups, where you do everything, move fast, and learn from a
+          lot of people. Then, later on, move to a larger organization and learn what it has to teach. And if you can
+          find a place that's in the middle of that transition — like Waze was — that might be the best option of all.
+        </p>
+      </div>
+
+      <p class="footer">Amir spent 11 years at Waze and Google in engineering and management roles. He's currently
+        resting, learning, and plotting his next adventure.</p>
+    </div>
+
+  </div>
+
+  <script>
+    var currentLang = 'he';
+    function toggleLang() {
+      currentLang = (currentLang === 'he') ? 'en' : 'he';
+      var isHe = currentLang === 'he';
+      document.getElementById('content-he').hidden = !isHe;
+      document.getElementById('content-en').hidden = isHe;
+      document.documentElement.setAttribute('lang', currentLang);
+      document.documentElement.setAttribute('dir', isHe ? 'rtl' : 'ltr');
+      document.getElementById('langToggle').textContent = isHe ? 'English' : 'עברית';
+      document.title = isHe ? '‏11 שנים בגוגל: ראיון פרידה' : '11 Years at Google: An Exit Interview';
+      window.scrollTo(0, 0);
+    }
+  </script>
+</body>
+
+</html>
