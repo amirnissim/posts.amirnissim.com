@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-QW1LPEEZMQ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-QW1LPEEZMQ');
+  </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amir Nissim — Writing</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@500;700;900&family=Heebo:wght@300;400;500;700&display=swap"
+    rel="stylesheet">
+  <style>
+    :root {
+      --ink: #1c2733;
+      --muted: #5c6b7a;
+      --accent: #2563a8;
+      --paper: #fbfaf7;
+      --line: #e3e0d8;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: var(--paper);
+      color: var(--ink);
+      font-family: 'Heebo', sans-serif;
+      font-weight: 300;
+      font-size: 1.1rem;
+      line-height: 1.85;
+    }
+
+    .wrap {
+      max-width: 46rem;
+      margin: 0 auto;
+      padding: 3rem 1.5rem 5rem;
+    }
+
+    .topbar {
+      display: flex;
+      justify-content: flex-end;
+      margin-bottom: 2rem;
+    }
+
+    .lang-toggle {
+      font-family: 'Heebo', sans-serif;
+      font-size: 0.85rem;
+      font-weight: 500;
+      color: var(--accent);
+      background: none;
+      border: 1px solid var(--accent);
+      border-radius: 2rem;
+      padding: 0.35rem 1.1rem;
+      cursor: pointer;
+      transition: background 0.15s, color 0.15s;
+    }
+
+    .lang-toggle:hover,
+    .lang-toggle:focus-visible {
+      background: var(--accent);
+      color: var(--paper);
+      outline: none;
+    }
+
+    .eyebrow {
+      color: var(--accent);
+      font-weight: 500;
+      font-size: 0.9rem;
+      letter-spacing: 0.05em;
+      margin-bottom: 0.75rem;
+    }
+
+    h1 {
+      font-family: 'Frank Ruhl Libre', serif;
+      font-weight: 900;
+      font-size: clamp(2rem, 6vw, 3rem);
+      line-height: 1.2;
+      margin-bottom: 1.5rem;
+    }
+
+    .intro {
+      color: var(--muted);
+      font-size: 1.05rem;
+      border-inline-start: 3px solid var(--accent);
+      padding-inline-start: 1rem;
+      margin-bottom: 3.5rem;
+    }
+
+    .posts {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 1.75rem;
+    }
+
+    .post-card {
+      display: block;
+      text-decoration: none;
+      color: inherit;
+      padding: 1.5rem 1.75rem;
+      border: 1px solid var(--line);
+      border-radius: 0.9rem;
+      background: #fff;
+      transition: border-color 0.15s, transform 0.15s, box-shadow 0.15s;
+    }
+
+    .post-card:hover,
+    .post-card:focus-visible {
+      border-color: var(--accent);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(37, 99, 168, 0.1);
+      outline: none;
+    }
+
+    .post-date {
+      color: var(--muted);
+      font-size: 0.85rem;
+      font-weight: 500;
+      letter-spacing: 0.03em;
+      margin-bottom: 0.5rem;
+    }
+
+    .post-title {
+      font-family: 'Frank Ruhl Libre', serif;
+      font-weight: 700;
+      font-size: 1.4rem;
+      line-height: 1.4;
+      margin-bottom: 0.6rem;
+    }
+
+    .post-excerpt {
+      color: var(--muted);
+      font-size: 0.98rem;
+      margin-bottom: 0.9rem;
+    }
+
+    .post-link {
+      color: var(--accent);
+      font-size: 0.9rem;
+      font-weight: 500;
+    }
+
+    .empty-note {
+      color: var(--muted);
+      font-style: italic;
+      font-size: 0.95rem;
+    }
+
+    .footer {
+      margin-top: 4rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 0.9rem;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+    }
+
+    .footer a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    .footer a:hover {
+      text-decoration: underline;
+    }
+
+    [hidden] {
+      display: none !important;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+
+    <div class="topbar">
+      <button class="lang-toggle" id="langToggle" onclick="toggleLang()">עברית</button>
+    </div>
+
+    <!-- ===================== HEBREW ===================== -->
+    <div id="content-he" hidden>
+      <div class="eyebrow">אמיר ניסים</div>
+      <h1>כתיבה</h1>
+      <p class="intro">רשימת הפוסטים שפרסמתי כאן — מעדכן מדי פעם.</p>
+
+      <ul class="posts">
+        <li>
+          <a class="post-card" href="/leaving-google-fable5-interview.html">
+            <div class="post-date">יולי 2026</div>
+            <div class="post-title">11 שנים בגוגל: ראיון פרידה</div>
+            <p class="post-excerpt">אחרי יותר מעשור בווייז ובגוגל, ראיון פרידה קצר — על הדרך, התובנות, ומה הלאה.</p>
+            <span class="post-link">לקריאה ←</span>
+          </a>
+        </li>
+      </ul>
+
+      <div class="footer">
+        <span>אמיר ניסים</span>
+        <a href="https://www.linkedin.com/in/amirni" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </div>
+
+    <!-- ===================== ENGLISH ===================== -->
+    <div id="content-en">
+      <div class="eyebrow">Amir Nissim</div>
+      <h1>Writing</h1>
+      <p class="intro">Posts published here — updated occasionally.</p>
+
+      <ul class="posts">
+        <li>
+          <a class="post-card" href="/leaving-google-fable5-interview.html">
+            <div class="post-date">July 2026</div>
+            <div class="post-title">11 Years at Google: An Exit Interview</div>
+            <p class="post-excerpt">After more than a decade at Waze and Google, a short interview about the journey,
+              the lessons, and what comes next.</p>
+            <span class="post-link">Read →</span>
+          </a>
+        </li>
+      </ul>
+
+      <div class="footer">
+        <span>Amir Nissim</span>
+        <a href="https://www.linkedin.com/in/amirni" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+    var currentLang = 'en';
+    function toggleLang() {
+      currentLang = (currentLang === 'he') ? 'en' : 'he';
+      var isHe = currentLang === 'he';
+      document.getElementById('content-he').hidden = !isHe;
+      document.getElementById('content-en').hidden = isHe;
+      document.documentElement.setAttribute('lang', currentLang);
+      document.documentElement.setAttribute('dir', isHe ? 'rtl' : 'ltr');
+      document.getElementById('langToggle').textContent = isHe ? 'English' : 'עברית';
+      document.title = isHe ? 'אמיר ניסים — כתיבה' : 'Amir Nissim — Writing';
+      window.scrollTo(0, 0);
+    }
+  </script>
+</body>
+
+</html>
